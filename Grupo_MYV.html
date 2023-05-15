@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo MYV</title>
+    <link rel="shortcut icon" href="/imagenes/aaaaaee.png">
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        }
+        body{
+            background:url(/imagenes/angryimg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100vw;
+            color: rgb(255, 255, 255);
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20vh;
+        }
+        header h1{
+            font-size: 80px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            -webkit-text-stroke: 3px rgb(164, 164, 164);
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 120px;
+            height: 80vh;
+        }
+        .block1{
+            border-radius: 30px;
+            height:200px;
+            width: 250px;
+            background-color: rgba(0, 136, 255, 0.1);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.8s ease-out;
+        }
+        .block2{
+            border-radius: 30px;
+            height: 200px;
+            width: 250px;
+            background-color: rgba(0, 136, 255, 0.1);
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.8s ease-out;
+        }
+        .block1 img{
+            height: fit-content;
+            width: 100%;
+        }
+                        .block1:hover{
+                            background-color: rgba(255, 255, 255, 0.2);
+                            transform: scale(1.2);
+                            transition-duration: 0.8s ;
+                            
+                        }
+
+        .block2 h1{
+            font-size: 70px;
+            color: green;
+            -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .block2 img{
+            width: fit-content;
+            height: 200px;
+            position:fixed;
+            z-index: -1;
+            opacity: .6;
+        }
+                        .block2:hover{
+                            background-color: rgba(255, 255, 255, 0.2);
+                            transform: scale(1.2);
+                            transition-duration: 0.8s;
+                        }
+
+    </style>
+</head>
+<body>
+    <div class="pad">
+        <header>
+            <h1>Grupo MYV</h1>
+        </header>
+        <section>
+            <a href="Index.html" class="block1"  >
+                <img src="imagenes/mateel_logo.png">
+            </a>
+            <a href="#" class="block2">
+            <h1>FORTRAC</h1> 
+            <img src="imagenes/tract.png">
+            </a>
+        
+        </section>
+    </div>
+</body>
+</html>

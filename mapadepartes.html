@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateel</title>
+    <link rel="stylesheet" href="mapadepartes.css">
+    <script>
+      function redireccionar() {
+        var texto = document.getElementById('texto').value; // Obtener el texto ingresado en el input
+        var url = 'https://partscatalog.deere.com/jdrc/search/type/model/term/' + texto; // Concatenar el texto a la URL deseada
+  
+        window.location.href = url; // Redirigir a la nueva URL
+      }
+      function redireccionar2() {
+        var texto2 = document.getElementById('texto2').value; // Obtener el texto ingresado en el input
+        var url2 = 'https://partscatalog.deere.com/jdrc/search/type/parts/term/' + texto2; // Concatenar el texto a la URL deseada
+  
+        window.location.href = url2; // Redirigir a la nueva URL
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/da73ff60fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="fondaso">
+        <!--------- ZONA HEADER --------->
+        <header class="header">
+          <div class="container"> 
+              <nav class="navbar">
+                <img src="imagenes/mateel_logo.png" class="nav-branding">
+                <ul class="nav-menu">
+                  <li class="nav-item">
+                    <a href="Index.html" class="nav-link">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Nosotros.html" class="nav-link">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="videos.html" class="nav-link">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="mapadepartes.html" class="nav-link">Manual</a>
+                  </li>    
+                  <li class="nav-item">
+                      <a href="Contact.html" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </nav>
+          </div>
+        </header>
+        <div class="divicion"></div>
+    <!------- Zona Section ------->
+        <section>
+          <div class="papii">
+              <h1>Busca el codigo de tu refacción aqui_<i class="fa-solid fa-arrow-down"></i></h1>
+
+              <div class="serch">
+                
+                <p>Inserta el modelo de tu Maquinaria</p>
+                <div class="ae">
+                  <input type="text" id="texto" placeholder="Modelo De La Maquinaria">
+                  <button onclick="redireccionar()">Redirecionar</button>
+                </div>
+              </div>
+
+              <div class="serch">
+                
+                <p>Inserta el codigo de la refacción buscada</p>
+                <div class="ae">
+                <input type="text" id="texto2" placeholder="Numero de modelo de refacción">
+                <button onclick="redireccionar2()">Redirecionar</button>
+                </div>
+              </div> 
+          </div>
+        </section>
+    </div>
+
+
+
+    
+    <script src="funtionali.js"></script>
+</body>
+</html>
